@@ -1,0 +1,8 @@
+module haifux 1.0.0;
+
+require {
+  type unconfined_t;
+  class process { transition sigchld };
+  class file { read x_file_perms };
+}
+
